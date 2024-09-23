@@ -1,0 +1,134 @@
+body {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0;
+    background-image: url('hero.png');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.container {
+    max-width: 920px;
+    width: 100%; 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    box-shadow: none;
+    border-right: none; 
+}
+
+#search-button {
+    background-color: rgb(42, 196, 175);
+    color: white;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: 1px solid rgb(42, 196, 175);
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    box-shadow: none;
+}
+
+#search-button i {
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.history-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#history-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#history-list li {
+    width: 70%;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.delete-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: red;
+    font-size: 18px;
+}
+
+.delete-btn:hover {
+    color: darkred;
+}
+
+#clear-history {
+    background-color: rgb(42, 196, 175);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+#clear-history:hover {
+    background-color: darkred;
+}
+
+#toggle-history {
+    background-color: rgb(42, 196, 175);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+#toggle-history:hover {
+    background-color: darkred;
+}
